@@ -1,0 +1,17 @@
+\begin{thenomenclature} 
+
+ \nomgroup{G}
+
+  \item [{$\sigma $}]\begingroup \nomdescr {Surface Tension}\nomunits {\si {F.m^{-2}}}\nomeqref {1.0}
+		\nompageref{1}
+  \item [{\( \varepsilon _0 \)}]\begingroup \nomdescr {vacuum permittivity}\nomunits {\si {F.m^{-1}}}\nomeqref {2.0}
+		\nompageref{6}
+
+ \nomgroup{R}
+
+  \item [{\(a,b,c\)}]\begingroup \nomdescr {half axes of ellipsoid}\nomunits {\si {m}}\nomeqref {2.0}
+		\nompageref{3}
+  \item [{\(C\)}]\begingroup \nomdescr {dimensionless coefficient (e.g.\ for drag model)}\nomunits {1}\nomeqref {2.0}
+		\nompageref{5}
+
+\end{thenomenclature}

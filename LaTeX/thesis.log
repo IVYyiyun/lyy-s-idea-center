@@ -1,0 +1,715 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.12.19)  11 JAN 2023 12:13
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/dianming/Desktop/Dyson-Ganggang/LaTeX/thesis.tex
+(/Users/dianming/Desktop/Dyson-Ganggang/LaTeX/thesis.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-11-02> (is2.cls
+Document Class: is2 1997/01/23
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/report.cls
+Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (nsize11.clo
+File: nsize11.clo 1996/05/26 v1.3r Standard LaTeX file (size option)
+)
+\@IEEEtrantmpdimenA=\dimen141
+\@IEEEtrantmpdimenB=\dimen142
+\@IEEEtrantmpcountA=\count194
+\@IEEEtrantmpcountB=\count195
+\@IEEEtrantmptoksA=\toks16
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count196
+)
+\@linkdim=\dimen143
+\Hy@linkcounter=\count197
+\Hy@pagecounter=\count198
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count199
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4045.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count266
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen144
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count267
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count268
+\c@Item=\count269
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip50
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psfrag/psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\pfg@pcount=\count272
+\pfg@scount=\count273
+\pfg@temp=\write3
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2022/11/30 3.83 The Babel package
+\babel@savecnt=\count274
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count275
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+)) (/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen150
+\enit@toks=\toks19
+\enit@inbox=\box51
+\enit@count@id=\count276
+\enitdp@description=\count277
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/boxedminipage/boxedminipage.sty
+Package: boxedminipage 2020/04/19 v1.1 Boxed LaTeX2e minipages
+\bmp@box=\box52
+\bmp@width=\skip52
+\bmp@height=\skip53
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count278
+\float@exts=\toks20
+\float@box=\box53
+\@float@everytoks=\toks21
+\@floatcapt=\box54
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen151
+)) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen152
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count279
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count280
+\leftroot@=\count281
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count282
+\DOTSCASE@=\count283
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen153
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count284
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count285
+\dotsspace@=\muskip17
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
+\tag@help=\toks23
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
+\andhelp@=\toks24
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
+\@envbody=\toks25
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen160
+\WF@size=\dimen161
+\c@WF@wrappedlines=\count291
+\WF@box=\box57
+\WF@everypar=\toks27
+Package: wrapfig 2003/01/31  v 3.6
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen162
+\epsfysize=\dimen163
+) (hangcaption.sty
+\captionwidth=\skip57
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count292
+\rotFPtop=\skip58
+\rotFPbot=\skip59
+\rot@float@box=\box58
+\rot@mess@toks=\toks28
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip60
+\subfigcapskip=\skip61
+\subfigcaptopadj=\dimen164
+\subfigbottomskip=\skip62
+\subfigcapmargin=\dimen165
+\subfiglabelskip=\skip63
+\c@subfigure=\count293
+\c@lofdepth=\count294
+\c@subtable=\count295
+\c@lotdepth=\count296
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip64
+\subfig@bottom=\skip65
+) (algo.sty
+Package: algo 2002/06/21 v1.0 Algorithm typesetting package (JG)
+\algo@box=\box59
+\c@algo@nr=\count297
+\algo@left=\skip66
+\algo@margin=\skip67
+\algo@indent=\skip68
+\algo@cur=\skip69
+\algo@next=\skip70
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count298
+\lst@gtempboxa=\box60
+\lst@token=\toks29
+\lst@length=\count299
+\lst@currlwidth=\dimen166
+\lst@column=\count300
+\lst@pos=\count301
+\lst@lostspace=\dimen167
+\lst@width=\dimen168
+\lst@newlines=\count302
+\lst@lineno=\count303
+\lst@maxwidth=\dimen169
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count304
+\lst@skipnumbers=\count305
+\lst@framebox=\box61
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen170
+\ar@mcellbox=\box62
+\extrarowheight=\dimen171
+\NC@list=\toks30
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box63
+)
+\TX@col@width=\dimen172
+\TX@old@table=\dimen173
+\TX@old@col=\dimen174
+\TX@target=\dimen175
+\TX@delta=\dimen176
+\TX@cols=\count306
+\TX@ftn=\toks31
+) (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box64
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 93.
+
+(macros/more-macros.tex)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 101.
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count307
+\l__pdf_internal_box=\box65
+) (thesis.aux (title.aux) (chapters/Introduction.aux) (chapters/Fundamentals.aux) (chapters/Methodology.aux
+
+LaTeX Warning: Label `sec:valve' multiply defined.
+
+
+LaTeX Warning: Label `sec:valve' multiply defined.
+
+) (chapters/ResultandConclusion.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+Package hyperref Info: Link coloring OFF on input line 101.
+ (thesis.out) (thesis.out)
+\@outlinefile=\write4
+\openout4 = `thesis.out'.
+
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count308
+\scratchdimen=\dimen177
+\scratchbox=\box66
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen178
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks33
+) (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count314
+\openout2 = `title.aux'.
+
+ (title.tex
+<figures/jpg/rwth_ifas_de_cmyk.jpg, id=95, 1649.16125pt x 379.4175pt>
+File: figures/jpg/rwth_ifas_de_cmyk.jpg Graphic file (type jpg)
+<use figures/jpg/rwth_ifas_de_cmyk.jpg>
+Package pdftex.def Info: figures/jpg/rwth_ifas_de_cmyk.jpg  used on input line 11.
+(pdftex.def)             Requested size: 312.9803pt x 72.00322pt.
+ [0
+Non-PDF special ignored!
+<special> header=psfrag.pro
+
+
+{/Users/dianming/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map} <./figures/jpg/rwth_ifas_de_cmyk.jpg>] [1
+
+] [2
+
+] [3]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 11.
+ (/Users/dianming/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \maketitleis2
+                   [0]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \maketitleis2
+                   [1
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \maketitleis2
+                   [2
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \maketitleis2
+                   [3]) (thesis.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [1
+
+
+
+] [2
+
+]
+\openout2 = `chapters/Introduction.aux'.
+
+ (chapters/Introduction.tex
+Chapter 1.
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \include{chapters/Introduction}
+                                      [1
+
+
+
+]
+\openout2 = `chapters/Fundamentals.aux'.
+
+ (chapters/Fundamentals.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Fundamentals} [2
+
+
+
+
+]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+
+ []
+
+<figures/Fundamentals/TLtype.jpg, id=169, 401.5pt x 256.96pt>
+File: figures/Fundamentals/TLtype.jpg Graphic file (type jpg)
+<use figures/Fundamentals/TLtype.jpg>
+Package pdftex.def Info: figures/Fundamentals/TLtype.jpg  used on input line 26.
+(pdftex.def)             Requested size: 132.30666pt x 84.6755pt.
+<figures/Fundamentals/PRelief.jpg, id=170, 297.36093pt x 365.11406pt>
+File: figures/Fundamentals/PRelief.jpg Graphic file (type jpg)
+<use figures/Fundamentals/PRelief.jpg>
+Package pdftex.def Info: figures/Fundamentals/PRelief.jpg  used on input line 27.
+(pdftex.def)             Requested size: 132.30666pt x 162.45016pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 
+      [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.50 
+      <./figures/Fundamentals/TLtype.jpg> <./figures/Fundamentals/PRelief.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+<figures//Fundamentals/Globe-Valve-Discs.png, id=181, 529.98pt x 174.6525pt>
+File: figures//Fundamentals/Globe-Valve-Discs.png Graphic file (type png)
+<use figures//Fundamentals/Globe-Valve-Discs.png>
+Package pdftex.def Info: figures//Fundamentals/Globe-Valve-Discs.png  used on input line 58.
+(pdftex.def)             Requested size: 308.71104pt x 101.73557pt.
+<figures//Fundamentals/globe-valve-768x633.png, id=184, 578.16pt x 476.53032pt>
+File: figures//Fundamentals/globe-valve-768x633.png Graphic file (type png)
+<use figures//Fundamentals/globe-valve-768x633.png>
+Package pdftex.def Info: figures//Fundamentals/globe-valve-768x633.png  used on input line 71.
+(pdftex.def)             Requested size: 220.50885pt x 181.74509pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
+
+ []
+
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 
+      <./figures//Fundamentals/Globe-Valve-Discs.png> <./figures//Fundamentals/globe-valve-768x633.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
+
+ []
+
+[5]
+<figures//Fundamentals/Piezoelectric-effect.png, id=210, 540.0175pt x 251.94125pt>
+File: figures//Fundamentals/Piezoelectric-effect.png Graphic file (type png)
+<use figures//Fundamentals/Piezoelectric-effect.png>
+Package pdftex.def Info: figures//Fundamentals/Piezoelectric-effect.png  used on input line 145.
+(pdftex.def)             Requested size: 308.71104pt x 144.03087pt.
+<figures//Fundamentals/Piezo-ceramic-sensors.png, id=212, 597.23125pt x 428.60126pt>
+File: figures//Fundamentals/Piezo-ceramic-sensors.png Graphic file (type png)
+<use figures//Fundamentals/Piezo-ceramic-sensors.png>
+Package pdftex.def Info: figures//Fundamentals/Piezo-ceramic-sensors.png  used on input line 160.
+(pdftex.def)             Requested size: 264.61331pt x 189.89966pt.
+) [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.112 \include{chapters/Fundamentals}
+                                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.112 \include{chapters/Fundamentals}
+                                      <./figures//Fundamentals/Piezoelectric-effect.png> <./figures//Fundamentals/Piezo-ceramic-sensors.png>]
+\openout2 = `chapters/Methodology.aux'.
+
+ (chapters/Methodology.tex
+Chapter 3.
+) [7
+
+
+
+
+]
+\openout2 = `chapters/ResultandConclusion.aux'.
+
+ (chapters/ResultandConclusion.tex [8
+
+
+
+
+]
+Chapter 4.
+) [9] [10
+
+
+
+] (thesis.lof)
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [11] [12
+
+] (thesis.lot)
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+ [13] [14
+
+] (thesis.lol)
+\tf@lol=\write8
+\openout8 = `thesis.lol'.
+
+ (thesis.bbl [15] [16
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+\OT1/ptm/m/n/10.95 4dfd232c551252d380eb6294dd88d0d233d43c0a . html ? []wkts[] = 1672759904606 & bdQuery =
+ []
+
+) [17] (thesis.aux (title.aux) (chapters/Introduction.aux) (chapters/Fundamentals.aux) (chapters/Methodology.aux) (chapters/ResultandConclusion.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: CD90E1E0736AFD9E3701318846712E96;3399.
+ ) 
+Here is how much of TeX's memory you used:
+ 13686 strings out of 475283
+ 226413 string characters out of 2771220
+ 568621 words of memory out of 3000000
+ 34810 multiletter control sequences out of 15000+600000
+ 494904 words of font info for 75 fonts, out of 8000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 72i,6n,77p,378b,506s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (27 pages, 1915914 bytes).
+PDF statistics:
+ 337 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+

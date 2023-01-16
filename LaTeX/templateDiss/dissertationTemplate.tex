@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%% asme2e.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for producing Ph. D dissertation using LaTeX                           %
+% Written by   Marco Longhitano and Stefan Jeske                                  %
+%              Istitute for Fluid Power Drives and Controls (IFAS)                %
+%              RWTH University Aachen                                             %
+%              Steinbachstrasse 53                                                %
+%              D-52074 Aachen                                                     %
+%              Tel: (+49) 0241 - 80 27525 (0ffice)                                %
+%              Email: marco.longhitanoqifas.rwth-aachen.de                        %
+%              WWW:   http://www.ifas.rwth-aachen.de/                             % 
+%              April 1, 2016                                                      %
+% Modified:                                                                       %
+% Use at your own risk, send complaints to marco.longhitano@ifas.rwth-aachen.de   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Classes abd Styles
+\documentclass{Classes/ifasDiss}
+\usepackage{Styles/ifasDissMacros}
+\usepackage{lipsum}
+
+%turn off those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+%Info for the pdf file
+\ifpdf
+    \pdfinfo { /Title  (IFAS Dissertation Template in Latex)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (Marcus Tullius Cicero)
+               /CreationDate (D:20160321000000)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20160322000000)
+               /Subject (Writing a PhD thesis in LaTeX)
+               /Keywords (PhD, Thesis)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+
+%Info about author and document(used for the titlepage)
+\author{Marcus Tullius Cicero}
+\title{IFAS Dissertation Template in Latex}
+\secondCorrector{Name}
+\dateOfExam{Date}
+
+\begin{document}
+%Titlepage
+\maketitle
+
+\frontmatter
+%Dedication
+\input{Dedication/dedication}
+
+%Acknowledgement
+\input{Acknowledgement/acknowledgement}
+
+%Zusammenfassung/Abstract
+\input{Abstract/abstract}
+\input{Abstract/zusammenfassung}
+ 
+%Reset Pagenumbering to 1 and small romans
+\pagenumbering{roman}
+
+%Print Table of contents
+\tableofcontents
+
+%Add the Nomenclature to the toc
+%Use 
+% <makeindex dissertationTemplate.nlo -s nomencl.ist -o dissertationTemplate.nls>
+%to add new entries to the nomenclature. Afterwards compile .tex again
+\setlength{\nomitemsep}{-0.5ex}%Interline
+\printnomenclature[6em]%Intercolumn
+
+%Start mainmatter
+\mainmatter
+\pagestyle{mainmatter}
+
+\input{Chapters/chapter1}
+
+\input{Chapters/chapter2}
+
+\begin{appendices}
+\input{Chapters/appendix}
+\end{appendices}
+
+%\renewcommand\thechapter{\Alph{chapter}}
+%\input{Chapters/appendix}
+%\addcontentsline{toc}{chapter}{Appendix}
+
+%Print list of figures and add to toc
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+%Print list of tables and add to toc
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+\bibliography{dissertationTemplate}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\input{CV/cv}
+
+\end{document}

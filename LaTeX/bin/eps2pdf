@@ -1,0 +1,293 @@
+#!/bin/bash
+#
+# The eps2pdf script converts eps files to pdf format while respecting the
+# bounding box. If the eps file was built from a corresponding fig file, the
+# fig file is used to create the pdf file. If the fig file contains special
+# text, pdflatex is invoked to typeset this special text and include it in
+# the output file. If there is no fig file (or if the user decides not to use
+# it), ghostscript is invoked directly to do the conversion.
+#
+# Wouter Kager, 2004/05/23
+
+program=`basename "$0"`
+gsopts="-q -dMaxBitmap=300000000 -sDEVICE=pdfwrite -dSAFER -dNOPAUSE -dBATCH"
+usefigfile="y"
+class="article"
+options=""
+colorcmd="\gdef\color[#1]#2{\relax}"
+addpackages="graphicx"
+packages=""
+fontdef="{\relax}"
+forced="n"
+hshift="0pt"
+vshift="0pt"
+distres="600"
+
+echo -e "$program 2004/05/23 by Wouter Kager\n"
+
+# Scan command line options.
+while getopts ":c:Cd:fFh:p:v:x" optionkey $*; do
+	case $optionkey in
+		c)  class="$class]$OPTARG" ;;
+		C)  colorcmd=""
+			addpackages="color,graphicx" ;;
+		d)	distres="$OPTARG" ;;
+		f)	forced="y" ;;
+		F)	fontdef="{\reset@font\fontsize{#1}{#2pt}\fontfamily{#3}"
+			fontdef="$fontdef\fontseries{#4}\fontshape{#5}\selectfont}" ;;
+		h)	hshift="$OPTARG" ;;
+		p)	packages="$packages$OPTARG," ;;
+		v)	vshift="$OPTARG" ;;
+		x)	usefigfile="n" ;;
+		:)	echo "$program: the option -$OPTARG requires an argument!"
+			echo "$program: run $program without arguments for help"
+			exit 1 ;;
+		?)	echo "$program: the option -$OPTARG is illegal!"
+			echo "$program: run $program without arguments for help"
+			exit 1 ;;
+	esac
+done
+
+# Shift away the specified options.
+shift $[$OPTIND-1]
+
+# Check if we have received any input files.
+if [ $# -eq 0 ]; then
+	cat <<-EOF
+		Usage: $program [options] file(s)
+		
+		The valid options are:
+		 -C           turn on color switching (adds color package)
+		 -c class     specify the document class (default=article)
+		 -d res       specify distiller resolution   (default=600)
+		 -F           turn on font switching to use fig file fonts
+		 -f           force existing files to be overwritten
+		 -h dimen     shift text horizontally (dimen in tex units)
+		 -p packages  specify packages  (graphicx is always added)
+		 -v dimen     shift text vertically   (dimen in tex units)
+		 -x           do not search for fig file to build pdf file
+		
+		Packages must be specified as a comma-separated list, with
+		options for a particular package written directly in front
+		of the package name between square brackets. Likewise, you
+		can specify class options between square brackets directly
+		in front of the class name. In this case you may leave out
+		the class name to use the default article class.
+		
+		Example: eps2pdf -c [12pt] -p txfonts,[one,two]mysty *.eps
+		EOF
+	exit 0
+fi
+
+# This is a bit of tricky code that parses the class and packages arguments.
+# It results in appropriate \documentclass and \usepackage strings stored in
+# the variables class and packages, respectively.
+for field in `echo "$class" | tr "]" " "`
+do
+	if [ `echo "$field" | cut -c1` = "[" ]; then
+		options="$field]"
+	else
+		class="{$field}"
+	fi
+done
+class="\documentclass$options$class"
+
+temp=`echo "$packages" | tr "]" " "`
+packages="\usepackage"
+options=""
+for field in $temp
+do
+	for subfield in `echo "$field" | tr "," " "`
+	do
+		if [ `echo "$subfield" | cut -c1` = "[" ]; then
+			options="$subfield"
+		else
+			if [ "$options" = "" ]; then
+				packages="$packages{$subfield}\usepackage"
+			else
+				options="$options,$subfield"
+			fi
+		fi
+	done
+	if [ ! "$options" = "" ]; then
+		packages="$packages$options]"
+		options=""
+	fi
+done
+packages="$packages{$addpackages}"
+
+# Prepare for the conversion.
+temp="$program$$"
+answer="y"
+filelist="$temp.tex $temp.aux $temp.log $temp.eps $temp.pdf"
+
+# Make sure existing files are only overwritten if the user agrees.
+for j in $filelist
+do
+	if [ -e "$j" ]; then
+		if [ ! "$forced" = "y" ]; then
+			echo "$program: warning, the file $j exists!"
+			echo -n "$program: should I overwrite it (y/n)? "
+			read answer
+		fi
+		if [ ! "$answer" = "y" ]; then
+			echo "$program: program terminated [ok]"
+			exit 0
+		fi
+	fi
+done
+
+# Loop through all files specified on the command line.
+for file
+do
+
+# Clean up existing temp files.
+rm -f $filelist
+
+# Get the base name of the file we are processing.
+if [ `dirname "$file"` = "." ]; then
+	dir=""
+else
+	dir=`dirname "$file"`/
+fi
+base=$dir`basename "$file" .eps`
+
+# See if the input file is there.
+if [ ! -f "$base".eps ]; then
+	echo -e "$program: file $base.eps: no such file (skipping)\n" 1>&2
+	continue
+fi
+if [ ! -r "$base".eps ]; then
+	echo -e "$program: file $base.eps: not readable (skipping)\n" 1>&2
+	continue
+fi
+
+echo "$program: processing file $base.eps"
+
+# See if the EPS file contains an appropriate bounding box.
+if [ ! `sed '/EndComments/ q' "$base".eps | grep -c %%BoundingBox` = "1" ];
+then
+	echo -e "$program: file $base.eps: no bounding box found (skipping)\n" 1>&2
+	continue
+fi
+bbox=`sed '/EndComments/ q' "$base".eps | grep %%BoundingBox`
+
+# Set dimensions, left and top of bounding box (PostScript uses "bigpoints").
+set `echo "$bbox"`
+wd=$(($[$4-$2]+20))"bp"; 
+ht=$(($[$5-$3]+20))"bp"; 
+left=$(($2 - 10))"bp"; 
+top=$(($5 - 10))"bp"
+
+answer="y"
+
+# Only overwrite existing PDF file if the user agrees.
+if [ -e "$base.pdf" ]; then
+	if [ ! "$forced" = "y" ]; then
+		echo "$program: warning, the file $base.pdf exists!"
+		echo -n "$program: should I overwrite it (y/n)? "
+		read answer
+	fi
+fi
+
+# Determine the conversion method.
+if [ "$usefigfile" = "y" -a -f "$base.fig" -a -r "$base.fig" ]; then
+	# There is a fig file -- see if it contains special text.
+	method=`awk 'BEGIN {special=0}
+				/\\\\001/ {if ( $1==4 && ($9/2)%2==1 )
+				{special=1; print "pdftex"; exit}}
+				END {if (special==0) {print "ghostscript"}}' "$base.fig"`
+else
+	method="ghostscript"
+fi
+
+# Perform the conversion or skip the file.
+if [ "$answer" = "y" ]; then
+	case $method in
+	"pdftex")
+		echo "$program: special text found, invoking pdflatex"
+		fig2dev -L pstex "$base.fig" "$temp.eps" 2> "$temp.log"
+		if [ ! "$?" = "0" ]; then
+			echo "$program: fig2dev reported the following errors:"
+			cat "$temp.log"
+			echo -e "$program: $base.eps could not be converted [error]\n"
+			continue
+		fi
+		awk 'BEGIN {header=1; output=1}
+			$1 ~ /BoundingBox/ {
+			  if (header==1) {
+				xoff=-$2; yoff=-$3; $5=$5-$3; $4=$4-$2; $3=0; $2=0;
+				print;
+				printf "<< /PageSize [%d %d] >> setpagedevice\n",$4,$5;
+				print "gsave",xoff,yoff,"translate";}
+			  else {print}}
+			$1 ~ /EndComments/ {header=0}
+			$1 ~ /EndDocument/ {print; output=0}
+			$1 ~ /Trailer/ {print; output=1}
+			$1 !~ /BoundingBox/ {if (output==1) {print}}
+			END {print "grestore"}' "$temp.eps" |
+		gs $gsopts -r$distres -sOutputFile="$base.pdf" - -c quit 2> "$temp.log"
+		if [ ! "$?" = "0" ]; then
+			echo "$program: ghostscript reported the following errors:"
+			cat "$temp.log"
+			echo -e "$program: $base.eps could not be converted [error]\n"
+			continue
+		fi
+		cat > "$temp.tex" <<-EOF
+			$class$packages\parindent=0pt%
+			\voffset=-70bp\topmargin=0pt\headheight=0pt\headsep=0pt%
+			\hoffset=-71bp\oddsidemargin=0pt%
+			\pdfpagewidth=$wd\pdfpageheight=$ht%
+			\makeatletter\gdef\SetFigFont#1#2#3#4#5$fontdef%
+			$colorcmd\makeatother\pagestyle{empty}%
+			\begin{document}%
+			EOF
+		fig2dev -L pstex_t -p "$base.pdf" "$base.fig" |
+		awk -v hadj="$hshift" -v vadj="$vshift" \
+			'BEGIN {output=1}
+			/\\begingroup/ {output=0}
+			/\\begin{picture}/ {
+				if (output==0) {print "\\setbox0=\\hbox{%";
+				output=1}}
+			{if (output==1) {print}}
+			END {print "}\\newdimen\\tmp\\tmp=\\ht0\\advance\\tmp by -"vadj"%";
+				print "\\ht0=\\tmp\\hskip"hadj"\\raise"vadj"\\box0%";
+				print "\\end{document}"}' >> "$temp.tex"
+		pdflatex -interaction=batchmode "$temp.tex" 1> /dev/null
+		if [ ! "$?" = "0" ]; then
+			echo "$program: pdflatex reported the following errors:"
+			awk '$1 ~ /!/ {if ($1=="!") print}' "$temp.log"
+			echo -e "$program: $base.eps could not be converted [error]\n"
+		else
+			mv "$temp.pdf" "$base.pdf"
+			echo -e "$program: $base.eps -> $base.pdf [ok]\n"
+		fi ;;
+	"ghostscript")
+		echo "$program: no special text or no fig file, converting directly"
+		awk 'BEGIN {header=1}
+			$1 ~ /BoundingBox/ {
+			  if (header==1) {
+				xoff=-$2; yoff=-$3; $5=$5-$3; $4=$4-$2; $3=0; $2=0;
+				print; printf "<< /PageSize [%d %d] >> setpagedevice\n",$4,$5;
+				print "gsave",xoff,yoff,"translate";}
+			  else {print}}
+			$1 ~ /EndComments/ {header=0}
+			$1 !~ /BoundingBox/ {print}
+			END {print "grestore"}' "$base.eps" |
+		gs $gsopts -r$distres -sOutputFile="$base.pdf" - -c quit 2> "$temp.log"
+		if [ ! "$?" = "0" ]; then
+			echo "$program: ghostscript reported the following errors:"
+			cat "$temp.log"
+			echo -e "$program: $base.eps could not be converted [error]\n"
+		else
+			echo -e "$program: $base.eps -> $base.pdf [ok]\n"
+		fi ;;
+	esac
+else
+	echo -e "$program: file $base.eps skipped [ok]\n"
+fi
+
+done
+
+# Clean up.
+rm -f $filelist

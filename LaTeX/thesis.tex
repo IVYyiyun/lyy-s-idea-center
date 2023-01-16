@@ -1,0 +1,133 @@
+%\documentclass[11pt,twoside,openany]{is2}
+\documentclass[11pt,twoside,openright]{is2}
+%%
+%% TOGGLE TO MAKE REMARKS VISIBLE
+%%
+%%\newcommand{\remark}[1]{\begin{quotation}\textit{#1}\end{quotation}}
+%%\newcommand{\remark}[1]{}
+
+\usepackage[hyperfootnotes=false, colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\usepackage{psfrag}
+\usepackage{graphics}
+\usepackage{graphicx}
+\graphicspath{{figures/}}    % location of images and graphics % added by me (Lovis)
+\usepackage{amssymb}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{boxedminipage}
+\setlength{\fboxsep}{4mm}
+\usepackage{float}
+\usepackage{hyperref}
+%\usepackage{float}
+%\usepackage{afterpage}
+%\usepackage{subfigure}
+%\usepackage{theorem}
+%\usepackage{tabularx}
+%\usepackage{helvet}
+%\usepackage{a4wide}
+\usepackage{times}
+%\usepackage{palatino}
+\usepackage{makeidx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{mathptm}
+%\usepackage{moreverb}
+%\usepackage{picinpar}
+%\usepackage{fancyhdr}
+%\usepackage{alltt}
+%\usepackage{fancybox}
+%\usepackage{eepic}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+%\usepackage{doxygen}
+\usepackage{hangcaption}
+%\usepackage[dvips]{rotating}
+\usepackage{rotating}
+\usepackage[hang]{subfigure}
+\usepackage{algo}
+%\usepackage{textcomp,xspace}
+\usepackage{listings}
+
+% Added by me (Lovis):
+%\usepackage{natbib} % to use \citet
+%\usepackage{mathtools}
+%\usepackage{tikz}
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=1.17}
+%\usepackage{enumitem}
+\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}X{#1}} % linksbündig ohne Breitenangabe in tabularx-X-style
+\newcommand{\ctab}{\centering\arraybackslash} % Tabellenabschnitt zentriert in tabularx
+\usepackage{threeparttable}
+%\usepackage{multirow}
+%\usepackage{showframe}
+% End (Lovis)
+
+%% Abbreviations added by me (Lovis)
+\RequirePackage{xspace}
+\newcommand{\ie}{i.e.\@\xspace}
+\newcommand{\eg}{e.g.\@\xspace}
+\newcommand{\Eg}{E.g.\@\xspace}
+%\newcommand{\etc}{etc.\@\xspace}
+\newcommand{\wrt}{w.r.t.\@\xspace}
+\newcommand{\cf}{cf.\@\xspace}
+\newcommand{\etal}{et~al.\@\xspace}
+\newcommand{\iA}{i.a.\@\xspace}
+% End (Lovis)
+
+%\renewcommand{\sfdefault}{cmss}
+
+\renewcommand{\floatpagefraction}{0.75}
+\sloppy
+\setlength{\parskip}{2pt} 
+\setlength{\parindent}{0pt} 
+
+%\pagestyle{headings}
+%\makeindex
+
+\setcounter{tocdepth}{2}
+\hyphenation{ana-ly-sis opera-tion opera-tions opera-tio-nal neglected}
+
+\include{macros/more-macros}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                        BEGIN OF THE DOCUMENT                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+% bstctlcite MUST be at the very beginning of your document,
+% otherwise, it will "miss" some/most of your cites
+\bstctlcite{IEEEtranBST:BSTcontrol}
+
+\include{title}
+\tableofcontents
+
+
+\include{chapters/Introduction}
+\newpage
+\include{chapters/Fundamentals}
+\include{chapters/Methodology}
+\include{chapters/ResultandConclusion}
+
+\begin{appendix}
+
+\listoffigures
+\listoftables
+\listoflistings
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,bib/IEEEtranBST,bib/your.bib}
+
+
+\end{appendix}
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          END OF THE DOCUMENT                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
