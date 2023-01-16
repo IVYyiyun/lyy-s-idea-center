@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {4}Description}{5}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Description of system}{5}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Outlook}{6}{chapter.5}%
-\contentsline {subsection}{\numberline {5.0.1}Aufz^^c3^^a4hlungen mit Zahlen}{7}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.0.1}Aufzählungen mit Zahlen}{7}{subsection.5.0.1}%
 \contentsline {chapter}{\nonumberline List of literature}{I}{chapter*.25}%
 \contentsline {chapter}{\nonumberline List of Tables}{II}{chapter*.26}%
 \contentsline {chapter}{\nonumberline List of Figures}{III}{chapter*.27}%

@@ -1,17 +1,17 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'Thesis.blg'
-[290] biber-MSWIN64:340> INFO - === 
-[350] Biber.pm:418> INFO - Reading 'Thesis.bcf'
-[521] Biber.pm:978> INFO - Found 4 citekeys in bib section 0
-[545] Biber.pm:4401> INFO - Processing section 0
-[569] Biber.pm:4592> INFO - Looking for bibtex file 'Contents/References.bib' for section 0
-[662] bibtex.pm:1713> INFO - LaTeX decoding ...
-[681] bibtex.pm:1518> INFO - Found BibTeX data source 'Contents/References.bib'
-[752] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[752] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[752] Biber.pm:4221> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[752] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[758] bbl.pm:654> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
-[761] bbl.pm:757> INFO - Output to Thesis.bbl
-[761] Biber.pm:130> WARN - Duplicate entry key: 'key' in file 'Contents/References.bib', skipping ...
-[761] Biber.pm:132> INFO - WARNINGS: 1
+[162] biber-MSWIN64:340> INFO - === 
+[217] Biber.pm:418> INFO - Reading 'Thesis.bcf'
+[387] Biber.pm:978> INFO - Found 4 citekeys in bib section 0
+[411] Biber.pm:4401> INFO - Processing section 0
+[431] Biber.pm:4592> INFO - Looking for bibtex file 'Contents/References.bib' for section 0
+[502] bibtex.pm:1713> INFO - LaTeX decoding ...
+[517] bibtex.pm:1518> INFO - Found BibTeX data source 'Contents/References.bib'
+[593] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[593] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[593] Biber.pm:4221> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[593] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[599] bbl.pm:654> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[602] bbl.pm:757> INFO - Output to Thesis.bbl
+[603] Biber.pm:130> WARN - Duplicate entry key: 'key' in file 'Contents/References.bib', skipping ...
+[603] Biber.pm:132> INFO - WARNINGS: 1
