@@ -1,0 +1,172 @@
+% --------------------------------------------------------------------------
+% 		Einheiten / Units
+% --------------------------------------------------------------------------
+\DeclareSIUnit[]\kmh{\kilo\meter\per\hour}
+\DeclareSIUnit[]\ms{\meter\per\second}
+\DeclareSIUnit[]\mss{\meter\per\square\second}
+\DeclareSIUnit[]\qm{\square\meter}
+\DeclareSIUnit\bar{bar}
+
+% --------------------------------------------------------------------------
+% 	Eigene Befehle / Own commands
+% --------------------------------------------------------------------------
+
+% Differenzialoperator / Differential operator 
+\newcommand*{\diff}{\mathop{}\!\mathrm{d}}
+
+% --------------------------------------------------------------------------
+% 		vorgegebene Trennung von Woertern / predefined seperation of words 
+% --------------------------------------------------------------------------
+\hyphenation{
+    ex-amp-le
+    Fahrt-ab-brü-che
+    Web-app
+    Da-rauf-hin
+% Ist"=Ge"-schwin"-dig"-keit % "= ist erst nach \begin{document} verfübar
+}
+
+
+% --------------------------------------------------------------------------
+% 		Pakete / Packages 
+% --------------------------------------------------------------------------
+
+% Die folgenden Pakete wurden bereits in igm.sty / the following packages were already included in igm.sty
+
+% {scrhack}	 				% Zusammenspiel von einigen Paketen mit KOMA-Script / Interaction of several packages with the KOMA-Script
+% [utf8]{inputenc}    		% Input-Encodung / Input-encoding
+% {babel}          			% Rechtschreibunterstuetzung / Spell aid
+% {csquotes} 				% Deutsche Anfuehrungszeichen / German quotation marks
+% [T1]{fontenc}         	% T1-kodierte Schriften, korrekte Trennmuster fuer Worte mit Umlauten / T1-encoded fonts, correct seperation of words with umlauts
+% {lmodern}					% Schoenere Schrift / Nicer font
+% {textcomp}				% Sonderzeichen im Text (z.B. €) / Special characters in the text (e.g. €)
+% {textgreek}				% Griechische Symbole im Text / Greek symbols in the text
+% {setspace}        		% Zeilenabstand / Line spacing
+% {scrpage2}				% Kopf- und Fusszeilen / Header and footer
+% {caption}       			% mehrzeilige Captions ausrichten / adjust multiline captions
+% {booktabs}		 		% Schoene horizontale Linien / horizontal lines
+% {multirow}		 		% Spalten und Zeilen weiter unterteilen / Divide lines and columns further
+% {rccol}			 		% Ausrichtung von Spalten am Dezimalzeichen / Align columns according to the decimal point
+% {graphicx, psfrag} 		% Zum Einbinden von Grafiken / Incorporation of graphics
+% {subcaption}          	% Unterabbildungen / Sub-illustrations
+% {amsmath}  				% Fuer erweiterte mathematische Konstrukte / for complex mathematic constructions
+% {mathtools}				% Fuer Mathematikformeln: Indizes oben links / Mathematical formula: Indeces top left
+% {mathrsfs,amssymb}		% Fuer Mathematikformeln: Symbole / Mathematical formula: Symbols
+% {amsfonts}				% Fuer Mathematikformeln: Schriften / Mathematical formula: Fonts
+% {bm}						% Fettschrift fuer Matrizen und Vektoren / Bold lettering for matrices and vectors
+% {arydshln}				% Linien fuer Matrizen und Vektoren / lines for matrices and vectors
+% {biblatex}				% Quellenangaben / Citations
+% {acronym}					% For the list of abbreviations
+% {siunitx}					% Für schöne Einheiten 
+% {pdflscape}       		% Seiten im Querformat im PDF richtig anzeigen / Display pages properly in landscape mode
+% {hyperref}				% PDF mit Hyperlinks
+% {geometry}				% margins
+
+% weitere Pakete können eingebunden werden / additional packages can be included
+
+%\usepackage{pgfplots}						% Zum Erstellen von Vektorgrafiken / Creation of vector graphics
+%\pgfplotsset{compat=1.13}						
+%\usetikzlibrary{external,positioning,calc,decorations.markings,arrows,shapes,patterns}
+%\tikzexternalize
+%\newcommand{\includetikz}[1]{
+%	\tikzsetnextfilename{Abbildungen/AbbildungenKompiliert/#1}%
+%	\input{Abbildungen/AbbildungenTIKZ/#1.tikz}}%
+
+
+% ganzes PDF einbinden können:
+\usepackage{pdfpages}
+
+% SPJ:
+% Einrückungen im Inhaltsverzeichnis anpassen:
+%\makeatletter
+%\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+%\renewcommand*\l@subsection{\@dottedtocline{2}{3.8em}{3.2em}}
+%\renewcommand*\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
+%\renewcommand*\l@paragraph{\@dottedtocline{4}{10em}{5em}}
+%\renewcommand*\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
+%\makeatother
+
+
+% SPJ:
+% serifenlose Schrift verwenden:
+\usepackage[scaled=0.92]{helvet} % Load Helvetica as default sans-serif font (from PS-Font collection)
+\renewcommand{\familydefault}{\sfdefault}
+\setkomafont{chapter}{\bfseries\large}
+\setkomafont{section}{\bfseries}
+\setkomafont{subsection}{\bfseries}
+\setkomafont{subsubsection}{\bfseries}
+\renewcommand*{\sectfont}{\bfseries}
+\sisetup{detect-all} % Sans für Units nutzen
+
+\sisetup{locale = DE} % Komma bei SI-Units
+
+% 4. Ebene mit Nummern + im Inhaltsverzeichnis:
+%\setcounter{secnumdepth}{4}
+%\setcounter{tocdepth}{4}
+
+% Tabellen über Seitenbreite
+\usepackage{tabularx}
+\usepackage{array}
+
+% SVG-Dateien einbinden können (Vektordateien)
+\usepackage{svg}
+
+% Texte als Monospace formatieren, ohne Sonderzeichen als Latex zu interpretieren (z.B. _) Kurzform: verb+text+
+% \usepackage{verbatim}
+
+% Zeilenumbrüche mit Silbentrennung in \texttt Umgebungen:
+\usepackage[htt]{hyphenat}
+
+% ifas Zitations-Stil imitieren: /xxx/ statt [xxx]
+\renewcommand{\mkbibbrackets}[1]{/#1/}
+
+% use of \begin{description}[style=nextline]
+\usepackage[shortlabels]{enumitem}
+
+% linebreak with \\ within tabular
+%  \usepackage{pbox}
+
+% Blindtexte einfügen können
+%\usepackage{blindtext}
+%\usepackage{lipsum}
+
+% Kopfzeile auch bei Kapitelanfängen:
+\renewcommand*{\chapterpagestyle}{scrheadings}
+
+\usepackage{layouts} % show lengths. eg:
+% \the\textwidth
+% textwidth in cm: \printinunitsof{cm}\prntlen{\textwidth}\\
+% textwidth in inches: \printinunitsof{in}\prntlen{\textwidth}
+
+
+\DeclareGraphicsExtensions{.pdf,.jpg,.png} % Rangfolge von Dateitypen
+\graphicspath{{Contents/Resources}} % Suchpfad für Dateien
+
+% Hidden table-column:
+\newcolumntype{H}{>{\lrbox0}c<{\endlrbox}@{}}
+
+% PDF-Layout: (default zweiseitig anzeigen)
+% \pdfcatalog{/PageLayout /TwoPageRight}
+
+% A newly defined length for negative vspace in the description-env:
+\newlength{\negspacelength}
+\setlength{\negspacelength}{-\baselineskip-\parskip}
+
+\BeforeStartingTOC[toc]{\setstretch{1.19}} % Inhaltsverzeichnis auf eine Seite quetschen, eine Zeile mehr passt mit 1.08
+
+
+\RedeclareSectionCommand[%
+    beforeskip=0pt,
+    afterskip=6pt
+]{chapter}
+\RedeclareSectionCommand[
+    beforeskip=6pt,
+    afterskip=6pt
+]{section}
+\RedeclareSectionCommand[
+    beforeskip=6pt,
+    afterskip=6pt
+]{subsection}
+\RedeclareSectionCommand[
+    beforeskip=6pt,
+    afterskip=6pt
+]{subsubsection}

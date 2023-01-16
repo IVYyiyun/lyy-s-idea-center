@@ -1,0 +1,282 @@
+% -------------------------------------------------------------------------
+% LaTeX Vorlage fuer wissenschaftliche Arbeiten am IGMR 
+% LaTeX template for thesis at the IGMR
+% -------------------------------------------------------------------------
+%
+%		AUTHOR: 		Schoeler, Frederic (FS)
+%		LAST CHANGE:	2017-11-16
+%		VERSION:		2.1
+%
+% -------------------------------------------------------------------------
+% 		ÄNDERUNGSVERZEICHNIS / List of changes
+%
+% 		V 1.0 | 2015-02-04 | F.Schoeler     | First english version
+%		V 1.1 | 2016-01-07 | F.Schoeler     | One template for german and english
+%		V 1.2 | 2017-03-21 | F.Schoeler     | Small changes for compatibility with TexLive 2016
+%		V 2.0 | 2017-05-08 | F.Schoeler     | Introduction of igm.sty
+%		V 2.1 | 2017-11-16 | F.Freikwoski   | Migration to IGMR
+%
+% -------------------------------------------------------------------------
+%		AKTUELLE Probleme / CURRENT problems: 
+%
+% -------------------------------------------------------------------------
+% 		LITERATUREMPFEHLUNG: / RECOMMENDED LITERATURE: 
+%
+% 		Kopka, Helmut: 	LaTeX - Band 1: Einführung, 
+% 			Published by Addison-Wesley, Third Edition,  2002
+%			Available at the textbook collection: ST 351T28 0001-1+3
+%		Schlosser, Joachim:	Wissenschaftliche Arbeiten schreiben mit LATEX
+%			Published by mitp, Third edition, 2009
+%			Available at the textbook collection: ST 351T28 0009+3
+%
+%		LATEX-prohibitions:		root/Latex/Literatur/l2tabu.pdf
+%		Avoid Eqnarray!:		root/Latex/Literatur/avoideqnarray.pdf	
+%		Manual KomaScript:		root/Latex/Literatur/scrguide.pdf
+%
+% -------------------------------------------------------------------------
+% 		HINWEISE / PLEASE NOTE: 
+%
+%		Zur Aktualisierung des Inhaltsverzeichnis muss 2x kompiliert werden. 
+%		Latex schreibt die Informationen beim ersten Kompilieren in eine Datei auf der
+%		Festplatte und laed diese beim zweiten Kompilieren erst ein.
+%		Fuer das Aktualisieren des Literaturverzeichnis muss pdflatex, dann bibtex und
+%		dann wieder	pdflatex kompiliert werden
+%
+%		In order to update the table of contents it is necessary to compile twice.
+%		After the first process of compiling, Latex saves the data to a document 
+%		on the hard drive and imports the data only upon a second process of compiling. 	
+%		Every update to the table of contents involves compiling pdflatex, biblatex and again pdflatex. 	
+%
+% -------------------------------------------------------------------------
+%		Magic Comments
+%		
+% !TeX TXS-program:bibliography = txs:///biber 
+%
+% -------------------------------------------------------------------------
+%
+\documentclass[
+    english,            % ngerman / english	,
+    draft    = false,    % [final/draft]			Document status
+    twoside    = false,    % [false/true]		single-sided document
+    fleqn                % {equation} left justify
+]{scrbook}           % Koma-Script
+
+% --------------------------------------------------------------------------
+% 		Pakete / Packages 
+% --------------------------------------------------------------------------
+\usepackage{igm}
+
+%
+%---------------------------------------------------------------------------
+%		Ergaenzungen / additions:
+%
+% 		Die Ergaenzungen enthalten selbst definierte Tex- und Latexbefehler
+%		sowie die Liste der Woerter, welche nicht getrennt werden duerfen
+%		(hyphenation)
+%
+% 		Additions contain self-defined Tex and Latex commands as well
+%		as a list of the words that cannot be seperated.
+%		(hyphenation)
+% --------------------------------------------------------------------------
+\input{Contents/Additions}
+
+%---------------------------------------------------------------------------
+% 		Standard Aufbau / Structure 
+%
+%		- Deckblatt / Title page
+%		- Schmutztitel / Half title
+%		- Aufgabenstellung / Issue
+%		- Eidesstattliche Erklärung / Statutory declaration
+%		- (Vorwort) / (Preface)
+%		- Inhaltsverzeichnis / Table of contents
+%		- Abkuerzungsverzeichnis / List of abbreviations
+%		- Formelzeichenverzeichnis / List of symbols
+%		- Einleitung / Introduction
+%		- Hauptkapitel / Main chapters
+%		- Zusammenfassung / Summary
+%		- Ausblick / Outlook
+%		- Literaturverzeichnis / List of literature
+%		- Abbildungsverzeichnis / Register of illustrations
+%		- Tabellenverzeichnis / List of tables
+%		- Anhang / Appendix
+%		
+% --------------------------------------------------------------------------
+
+
+% --------------------------------------------------------------------------
+% 		Metadaten / Meta data 
+% --------------------------------------------------------------------------
+\author{Dianming Lin}
+\authordegreefront{}
+\authordegreeback{B.\ Sc.}
+\studentno{412231}
+
+\type{Master's Thesis}
+\title{Development of control strategies for a hydraulic inverse pendulum}
+%\year{9999}
+\submissiondate{\today}
+\supervisor{
+    Univ.-Prof. Dr.-Ing. Katharina Schmitz \newline
+    Andreas Opgenoorth M.\ Sc. \newline
+} % Nach DIN 2005 (Schreib- und Gestaltungsregeln für die Textverarbeitung) stehen abgekürzte Master- und Bachelortitel als Teil des Namens ohne Komma hinter dem Namen
+
+% Text der Aufgabenstellung / text of the issue
+\issuetext{
+    The platform built by the Institute for Fluid Power Drives and Systems (ifas) is the subject of this thesis. An inverse pendulum consists 
+    of a pendulum and a sideways moving cart. Cart movement is controlled by a hydraulic system comprising of a hydraulic valve and a 
+    hydraulic linear motor for the lateral movement. \\
+    \\ \label{is:issue}
+    The purpose of controlling an inverted pendulum is to swiftly return it to balance while avoiding significant swings, extreme angles, and 
+    rapid motion. The system overcomes the random disturbances and maintains a stable position only after pendulum reaches the desired position.\\
+    \\
+        The following subtasks are to be worked on for this:
+        \begin{verse}
+        -Familiarize the model topic and state of the art (3 weeks)\\
+        -Reference data and understand the model (4 weeks)\\
+        -Analyze data and build Simulation (6 weeks)\\
+        -Test bench adaptation and controller setup (2 weeks)\\
+        -Implementma test stand (3 weeks)\\
+        -Documentation (4 weeks)\\
+    \end{verse}
+}
+
+
+% --------------------------------------------------------------------------
+% 		Literaturdatei / Bibliography file
+% --------------------------------------------------------------------------
+\addbibresource{Contents/References.bib}
+
+\begin{document}
+    \frontmatter    % Beginn des Vorspanns / Begin of the prefix
+    \setcounter{page}{0} % Titelblatt zählt in der Nummerierung nicht mit (Aussage Faried)
+% --------------------------------------------------------------------------
+% 		Deckblatt / Title page
+% --------------------------------------------------------------------------
+    % \TitlePageIGMR
+    \TitlePageIFAS
+
+%    % leere Seite hinter dem Deckblatt / blank page after the title page
+%    \newpage\null\thispagestyle{empty}\newpage
+%    \cleardoublepage
+
+% --------------------------------------------------------------------------
+% 		Eidesstattliche Erklärung / Statutory declaration
+% --------------------------------------------------------------------------
+    \DeclarationIGMR
+
+% --------------------------------------------------------------------------
+% 		Aufgabenstellung / Issue
+% --------------------------------------------------------------------------
+    \IssueIGMR
+
+    \ifoot[]{}
+    \cfoot[]{}
+    \ofoot[]{}
+
+% --------------------------------------------------------------------------
+%		Vorwort / Preface (optional)
+% --------------------------------------------------------------------------
+%\input{Template_Student/Preface}
+    \cleardoublepage
+
+% --------------------------------------------------------------------------<
+%		Inhaltsverzeichnis / Table of contents
+% --------------------------------------------------------------------------
+
+    \ihead[]{\headmark}
+    \pdfbookmark[1]{\contentsname}{toc}
+    \tableofcontents                    % Inhaltsverzeichnis / Table of contents
+    \cleardoublepage
+
+% --------------------------------------------------------------------------
+%		Formelzeichenverzeichnis / List of symbols
+% --------------------------------------------------------------------------
+    \input{Contents/Symbols}            %  Formelzeichenverzeichnis / List of symbols
+    \cleardoublepage
+
+% --------------------------------------------------------------------------
+%		Abkuerzungsverzeichnis / List of abbreviations
+% --------------------------------------------------------------------------
+    \input{Contents/Abbreviations}    % Abkuerzungsverzeichnis / List of abbreviations
+    \cleardoublepage
+
+% --------------------------------------------------------------------------
+% 		Inhalt / Contents
+% --------------------------------------------------------------------------
+
+    \mainmatter        % Beginn des Hauptteils / Begin of the main body
+    \ihead[]{\headmark}
+
+%    \include{Contents/01-Einleitung}
+%  \cleardoublepage
+
+%    \include{Contents/02-Stand_der_Technik}
+%    \cleardoublepage
+
+%    \include{Contents/03-Kapitel3}
+%    \cleardoublepage
+%    \include{Contents/04-Kapitel4}
+%    \cleardoublepage
+%    \include{Contents/05-Kapitel5}
+%    \cleardoublepage
+    \include{Contents/Abstract}
+    \cleardoublepage
+    \include{Contents/Introduction}
+    \cleardoublepage
+    \include{Contents/Fundamental}
+    \cleardoublepage
+
+    \include{Contents/Konstruktion}
+    \cleardoublepage
+
+%   \include{Contents/98-Summary}
+    \cleardoublepage
+
+
+
+    \include{Contents/99-Outlook}
+    \cleardoublepage
+
+    \include{Contents/Beispiel-Kapitel}
+    \cleardoublepage
+
+    \pagenumbering{Roman}
+% --------------------------------------------------------------------------
+%		Literaturverzeichnis / List of literature
+% --------------------------------------------------------------------------
+    \printbibliography[heading=bibintoc,title=List of literature]
+
+% --------------------------------------------------------------------------
+%		Tabellenverzeichnis / List of tables
+% --------------------------------------------------------------------------
+    \listoftables                        % Tabellenverzeichnis / List of tables
+    \cleardoublepage
+
+% --------------------------------------------------------------------------
+%		Abbildungsverzeichnis / Register of illustrations
+% --------------------------------------------------------------------------
+    \listoffigures                        % Abbildungsverzeichnis / Register of illustrations
+    \cleardoublepage
+
+% --------------------------------------------------------------------------
+%		Anhang / Attachment
+%
+%		Der Anhnag enthält weitere Dokumente, welche nicht direkt zur Arbeit
+%		gehören oder aus Platzgründen ausgelagert werden müssen. Die Kapitel
+%		des Anhangs werden mit Großbuchstaben bezeichnet
+%
+%		The attachment contains further documents which are not related to work directly or
+%		had to be outsourced due to a lack of space. The different chapters of the attachment
+%		are labeled with a captital letter.
+% --------------------------------------------------------------------------
+    \appendix
+
+% Inhalt des Anhangs (Beispiel) / List of contents of attachment (Example)
+%    SPJ: Ich habe keinen Anhang
+%    \input{Contents/A-Illustrations}
+%    \cleardoublepage
+%    \input{Contents/B-Table}
+%    \cleardoublepage
+
+    \backmatter
+\end{document}
