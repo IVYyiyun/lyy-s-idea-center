@@ -5,8 +5,10 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 A level-1 auxiliary file: title.aux
 Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: chapters/Introduction.aux
-Reallocating 'name_of_file' (item size: 1) to 26 items.
-A level-1 auxiliary file: chapters/Fundamentals.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: chapters/StateofArt.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: chapters/Experiment.aux
 Reallocating 'name_of_file' (item size: 1) to 25 items.
 A level-1 auxiliary file: chapters/Methodology.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
@@ -28,48 +30,46 @@ Database file #3: bib/your.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** IEEEtran BST control entry "IEEEtranBST:BSTcontrol" detected.
-Warning--empty journal in Valvebaidu
 
 Done.
-You've used 13 entries,
+You've used 7 entries,
             4087 wiz_defined-function locations,
-            1412 strings with 19350 characters,
-and the built_in function-call counts, 5118 in all, are:
-= -- 368
-> -- 81
+            1391 strings with 18880 characters,
+and the built_in function-call counts, 3396 in all, are:
+= -- 296
+> -- 67
 < -- 17
-+ -- 43
-- -- 18
-* -- 207
-:= -- 901
-add.period$ -- 24
-call.type$ -- 13
-change.case$ -- 16
-chr.to.int$ -- 45
-cite$ -- 14
-duplicate$ -- 419
-empty$ -- 481
-format.name$ -- 16
-if$ -- 1110
++ -- 35
+- -- 15
+* -- 156
+:= -- 609
+add.period$ -- 12
+call.type$ -- 7
+change.case$ -- 11
+chr.to.int$ -- 39
+cite$ -- 7
+duplicate$ -- 265
+empty$ -- 248
+format.name$ -- 13
+if$ -- 747
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 85
-newline$ -- 80
-num.names$ -- 12
-pop$ -- 266
+int.to.str$ -- 6
+missing$ -- 45
+newline$ -- 42
+num.names$ -- 6
+pop$ -- 95
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 370
+skip$ -- 258
 stack$ -- 0
-substring$ -- 84
-swap$ -- 236
-text.length$ -- 6
+substring$ -- 79
+swap$ -- 191
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 13
-warning$ -- 1
-while$ -- 21
-width$ -- 14
-write$ -- 134
-(There was 1 warning)
+type$ -- 7
+warning$ -- 0
+while$ -- 17
+width$ -- 7
+write$ -- 80
