@@ -758,9 +758,9 @@ INPUT title.aux
 INPUT ./chapters/Introduction.aux
 INPUT chapters/Introduction.aux
 INPUT chapters/Introduction.aux
-INPUT ./chapters/StateofArt.aux
-INPUT chapters/StateofArt.aux
-INPUT chapters/StateofArt.aux
+INPUT ./chapters/StateoftheArt.aux
+INPUT chapters/StateoftheArt.aux
+INPUT chapters/StateoftheArt.aux
 INPUT ./chapters/Experiment.aux
 INPUT chapters/Experiment.aux
 INPUT chapters/Experiment.aux
@@ -889,16 +889,16 @@ INPUT chapters/Introduction.tex
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT ./chapters/StateofArt.tex
-INPUT ./chapters/StateofArt.tex
-INPUT ./chapters/StateofArt.tex
-OUTPUT chapters/StateofArt.aux
-INPUT ./chapters/StateofArt.tex
-INPUT ./chapters/StateofArt.tex
-INPUT ./chapters/StateofArt.tex
-INPUT chapters/StateofArt.tex
-INPUT ./chapters/StateofArt.tex
-INPUT chapters/StateofArt.tex
+INPUT ./chapters/StateoftheArt.tex
+INPUT ./chapters/StateoftheArt.tex
+INPUT ./chapters/StateoftheArt.tex
+OUTPUT chapters/StateoftheArt.aux
+INPUT ./chapters/StateoftheArt.tex
+INPUT ./chapters/StateoftheArt.tex
+INPUT ./chapters/StateoftheArt.tex
+INPUT chapters/StateoftheArt.tex
+INPUT ./chapters/StateoftheArt.tex
+INPUT chapters/StateoftheArt.tex
 INPUT ./figures/BallSeatValve/ballseatvalve.jpg
 INPUT ./figures/BallSeatValve/ballseatvalve.jpg
 INPUT figures/BallSeatValve/ballseatvalve.jpg
@@ -969,9 +969,9 @@ INPUT title.aux
 INPUT ./chapters/Introduction.aux
 INPUT chapters/Introduction.aux
 INPUT chapters/Introduction.aux
-INPUT ./chapters/StateofArt.aux
-INPUT chapters/StateofArt.aux
-INPUT chapters/StateofArt.aux
+INPUT ./chapters/StateoftheArt.aux
+INPUT chapters/StateoftheArt.aux
+INPUT chapters/StateoftheArt.aux
 INPUT ./chapters/Experiment.aux
 INPUT chapters/Experiment.aux
 INPUT chapters/Experiment.aux
