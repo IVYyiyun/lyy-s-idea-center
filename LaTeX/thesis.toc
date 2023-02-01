@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {2.2}Sealing and Leakage}{3}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Experiment}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Test Rig}{5}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Result and Discussionn}{7}{chapter.4}%
-\contentsline {chapter}{List of Figures}{9}{appendix*.2}%
-\contentsline {chapter}{List of Tables}{11}{appendix*.3}%
-\contentsline {chapter}{List of Listings}{13}{appendix*.4}%
-\contentsline {chapter}{References}{15}{appendix*.5}%
+\contentsline {chapter}{\numberline {4}Result and Discussionn}{9}{chapter.4}%
+\contentsline {chapter}{List of Figures}{11}{appendix*.2}%
+\contentsline {chapter}{List of Tables}{13}{appendix*.3}%
+\contentsline {chapter}{List of Listings}{15}{appendix*.4}%
+\contentsline {chapter}{References}{17}{appendix*.5}%
