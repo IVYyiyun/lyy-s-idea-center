@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.16)  1 FEB 2023 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.16)  4 FEB 2023 23:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,7 +447,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 \openout2 = `title.aux'.
 
  (title.tex
-<figures/jpg/rwth_ifas_de_cmyk.jpg, id=63, 1649.16125pt x 379.4175pt>
+<figures/jpg/rwth_ifas_de_cmyk.jpg, id=67, 1649.16125pt x 379.4175pt>
 File: figures/jpg/rwth_ifas_de_cmyk.jpg Graphic file (type jpg)
 <use figures/jpg/rwth_ifas_de_cmyk.jpg>
 Package pdftex.def Info: figures/jpg/rwth_ifas_de_cmyk.jpg  used on input line 11.
@@ -537,27 +537,27 @@ l.1 \chapter
 ]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--20
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--35
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--42
+Underfull \hbox (badness 10000) in paragraph at lines 37--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--50
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
 
  []
 
@@ -566,7 +566,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has b
 <to be read again> 
                    \relax 
 l.61 
-      [3]) [4
+      [3]
+Underfull \hbox (badness 10000) in paragraph at lines 62--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--76
+
+ []
+
+) [4
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -576,28 +586,33 @@ l.111 \include{chapters/StateoftheArt}
 
  (chapters/Experiment.tex
 Chapter 3.
-<figures/TestRig/oldTestRig.jpg, id=152, 1542.76375pt x 1164.35pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
+
+<figures/TestRig/oldTestRig.jpg, id=161, 1542.76375pt x 1164.35pt>
 File: figures/TestRig/oldTestRig.jpg Graphic file (type jpg)
 <use figures/TestRig/oldTestRig.jpg>
-Package pdftex.def Info: figures/TestRig/oldTestRig.jpg  used on input line 19.
-(pdftex.def)             Requested size: 220.50885pt x 166.41905pt.
+Package pdftex.def Info: figures/TestRig/oldTestRig.jpg  used on input line 22.
+(pdftex.def)             Requested size: 198.45662pt x 149.77182pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
 
  []
 
-<figures/BallSeatValve/ballseatvalve.jpg, id=154, 1536.74126pt x 1132.23pt>
+<figures/BallSeatValve/ballseatvalve.jpg, id=163, 1536.74126pt x 1132.23pt>
 File: figures/BallSeatValve/ballseatvalve.jpg Graphic file (type jpg)
 <use figures/BallSeatValve/ballseatvalve.jpg>
-Package pdftex.def Info: figures/BallSeatValve/ballseatvalve.jpg  used on input line 32.
-(pdftex.def)             Requested size: 220.50885pt x 162.45013pt.
+Package pdftex.def Info: figures/BallSeatValve/ballseatvalve.jpg  used on input line 37.
+(pdftex.def)             Requested size: 198.45662pt x 146.21031pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--44
+Underfull \hbox (badness 10000) in paragraph at lines 43--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
@@ -610,38 +625,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--53
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.53 
+l.58 
       <./figures/TestRig/oldTestRig.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 54--67
+<figures/TestRig/Update1.jpg, id=172, 1204.5pt x 1319.93124pt>
+File: figures/TestRig/Update1.jpg Graphic file (type jpg)
+<use figures/TestRig/Update1.jpg>
+Package pdftex.def Info: figures/TestRig/Update1.jpg  used on input line 76.
+(pdftex.def)             Requested size: 149.9444pt x 164.30621pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
 
  []
 
-<figures/TestRig/newTestRig.jpg, id=164, 1639.12375pt x 1186.4325pt>
-File: figures/TestRig/newTestRig.jpg Graphic file (type jpg)
-<use figures/TestRig/newTestRig.jpg>
-Package pdftex.def Info: figures/TestRig/newTestRig.jpg  used on input line 79.
-(pdftex.def)             Requested size: 220.50885pt x 159.60027pt.
-) [6
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 \include{chapters/Experiment}
-                                    <./figures/BallSeatValve/ballseatvalve.jpg>] [7
+l.93 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+l.93 
+      <./figures/BallSeatValve/ballseatvalve.jpg> <./figures/TestRig/Update1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+
+ []
+
+<figures/TestRig/Update2.jpg, id=180, 1461.46pt x 1190.4475pt>
+File: figures/TestRig/Update2.jpg Graphic file (type jpg)
+<use figures/TestRig/Update2.jpg>
+Package pdftex.def Info: figures/TestRig/Update2.jpg  used on input line 104.
+(pdftex.def)             Requested size: 189.63438pt x 154.4548pt.
+<figures/TestRig/newTestRig.jpg, id=182, 1639.12375pt x 1186.4325pt>
+File: figures/TestRig/newTestRig.jpg Graphic file (type jpg)
+<use figures/TestRig/newTestRig.jpg>
+Package pdftex.def Info: figures/TestRig/newTestRig.jpg  used on input line 122.
+(pdftex.def)             Requested size: 198.45662pt x 143.633pt.
+) [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.112 \include{chapters/Experiment}
-                                    <./figures/TestRig/newTestRig.jpg>]
+                                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.112 \include{chapters/Experiment}
+                                    <./figures/TestRig/Update2.jpg> <./figures/TestRig/newTestRig.jpg>] [8]
 \openout2 = `chapters/ResultandDiscussion.aux'.
 
- (chapters/ResultandDiscussion.tex [8
-
-
-
-
-]
+ (chapters/ResultandDiscussion.tex
 Chapter 4.
-) [9] [10
+) [9
+
+
+
+
+] [10
 
 
 
@@ -663,22 +707,32 @@ Chapter 4.
 
  (thesis.bbl [15] [16
 
-]) [17] (thesis.aux (title.aux) (chapters/Introduction.aux) (chapters/StateoftheArt.aux) (chapters/Experiment.aux) (chapters/ResultandDiscussion.aux))
+]
+Underfull \hbox (badness 2384) in paragraph at lines 31--35
+[]\OT1/ptm/m/n/10.95 ``Static seals ver-sus dy-namic seals ap-pli-ca-tion.'' []$https : / / unitedseal . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+\OT1/ptm/m/n/10.95 static-[]seals-[]versus-[]dynamic-[]seals-[]application / # : [] : text = Static % 20seals % 20are % 20usually %
+ []
+
+) [17] (thesis.aux (title.aux) (chapters/Introduction.aux) (chapters/StateoftheArt.aux) (chapters/Experiment.aux) (chapters/ResultandDiscussion.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1C4483F9348D6B0CF980B9CFE91F270A;1762.
+(rerunfilecheck)             Checksum: AC7D281197EA552B454C33BB71E6A9ED;1882.
  ) 
 Here is how much of TeX's memory you used:
- 13604 strings out of 476406
- 215133 string characters out of 2805982
+ 13630 strings out of 476406
+ 215720 string characters out of 2805982
  1859787 words of memory out of 3000000
- 33622 multiletter control sequences out of 15000+600000
+ 33641 multiletter control sequences out of 15000+600000
  534785 words of font info for 74 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 72i,8n,77p,323b,506s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (27 pages, 1254220 bytes).
+ 72i,8n,77p,462b,506s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (27 pages, 1641548 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

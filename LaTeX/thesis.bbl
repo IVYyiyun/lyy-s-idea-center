@@ -22,6 +22,17 @@
 \BIBdecl
 \renewcommand{\BIBentryALTinterwordstretchfactor}{4}
 
+\bibitem{skousen2011valve}
+P.~L. Skousen, \emph{Valve handbook}.\hskip 1em plus 0.5em minus 0.4em\relax
+  McGraw-Hill Education, 2011.
+
+\bibitem{StaicOrDynamicSeals}
+\BIBentryALTinterwordspacing
+``Static seals versus dynamic seals application.''
+  \url{https://unitedseal.com/static-seals-versus-dynamic-seals-application/
+  #:~:text=Static%20seals%20are%20usually%20used,either%20reciprocating%20or%20oscillating%20motions.}
+\BIBentrySTDinterwordspacing
+
 \bibitem{kineticsValve}
 Z.~L. Jia~Yanchao, Jing~Qiqing, ``Discussion of the characteristics of several
   common valves,'' \emph{SHANDONG CHEMICAL INDUSTRY}, vol.~47, p.~1, 2018.
