@@ -947,6 +947,10 @@ INPUT .\figures\TestRig\newTestRig.jpg
 INPUT .\figures\TestRig\newTestRig.jpg
 INPUT .\figures\TestRig\newTestRig.jpg
 INPUT .\figures\TestRig\newTestRig.jpg
+INPUT D:\MikTex\tex\latex\psnfss\omlptm.fd
+INPUT D:\MikTex\tex\latex\psnfss\omlptm.fd
+INPUT D:\MikTex\tex\latex\psnfss\omlptm.fd
+INPUT D:\MikTex\tex\latex\psnfss\omlptm.fd
 INPUT .\chapters\ResultandDiscussion.tex
 INPUT .\chapters\ResultandDiscussion.tex
 INPUT .\chapters\ResultandDiscussion.tex
@@ -995,6 +999,8 @@ INPUT chapters\ResultandDiscussion.aux
 INPUT .\thesis.out
 INPUT .\thesis.out
 INPUT D:\MikTex\fonts\enc\dvips\base\8r.enc
+INPUT D:\MikTex\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT D:\MikTex\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT D:\MikTex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT D:\MikTex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT D:\MikTex\fonts\type1\urw\times\utmb8a.pfb

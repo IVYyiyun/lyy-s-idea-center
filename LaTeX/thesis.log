@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.16)  4 FEB 2023 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.16)  5 FEB 2023 14:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -665,27 +665,59 @@ File: figures/TestRig/newTestRig.jpg Graphic file (type jpg)
 <use figures/TestRig/newTestRig.jpg>
 Package pdftex.def Info: figures/TestRig/newTestRig.jpg  used on input line 122.
 (pdftex.def)             Requested size: 198.45662pt x 143.633pt.
-) [7
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--139
+
+ []
+
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 \include{chapters/Experiment}
-                                   
+l.139 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+l.139 
+       <./figures/TestRig/Update2.jpg> <./figures/TestRig/newTestRig.jpg>]
+LaTeX Font Info:    Trying to load font information for OML+ptm on input line 144.
+ (D:\MikTex\tex/latex/psnfss\omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 144.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--194
+
+ []
+
+) [8
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.112 \include{chapters/Experiment}
-                                    <./figures/TestRig/Update2.jpg> <./figures/TestRig/newTestRig.jpg>] [8]
+                                   ] [9]
 \openout2 = `chapters/ResultandDiscussion.aux'.
 
- (chapters/ResultandDiscussion.tex
+ (chapters/ResultandDiscussion.tex [10
+
+
+
+
+]
 Chapter 4.
-) [9
-
-
-
-
-] [10
+) [11] [12
 
 
 
@@ -693,19 +725,19 @@ Chapter 4.
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [11] [12
+ [13] [14
 
 ] (thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [13] [14
+ [15] [16
 
 ] (thesis.lol)
 \tf@lol=\write8
 \openout8 = `thesis.lol'.
 
- (thesis.bbl [15] [16
+ (thesis.bbl [17] [18
 
 ]
 Underfull \hbox (badness 2384) in paragraph at lines 31--35
@@ -717,22 +749,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--35
 \OT1/ptm/m/n/10.95 static-[]seals-[]versus-[]dynamic-[]seals-[]application / # : [] : text = Static % 20seals % 20are % 20usually %
  []
 
-) [17] (thesis.aux (title.aux) (chapters/Introduction.aux) (chapters/StateoftheArt.aux) (chapters/Experiment.aux) (chapters/ResultandDiscussion.aux))
+) [19] (thesis.aux (title.aux) (chapters/Introduction.aux) (chapters/StateoftheArt.aux) (chapters/Experiment.aux) (chapters/ResultandDiscussion.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: AC7D281197EA552B454C33BB71E6A9ED;1882.
  ) 
 Here is how much of TeX's memory you used:
- 13630 strings out of 476406
- 215720 string characters out of 2805982
- 1859787 words of memory out of 3000000
- 33641 multiletter control sequences out of 15000+600000
+ 13653 strings out of 476406
+ 216047 string characters out of 2805982
+ 1861787 words of memory out of 3000000
+ 33658 multiletter control sequences out of 15000+600000
  534785 words of font info for 74 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  72i,8n,77p,462b,506s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (27 pages, 1641548 bytes).
+{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (29 pages, 1656014 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
